@@ -23,3 +23,5 @@ found_emails/
 
 # Tmp files
 *.csv
+*.txt
+*.bak

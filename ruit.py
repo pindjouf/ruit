@@ -68,11 +68,11 @@ async def process_emails(email_guesses, as_client, ghunt_creds, full_name):
                     continue
                 
                 progress.remove_task(task)
-                await asyncio.sleep(30)
+                await asyncio.sleep(120)
                 
             except Exception as e:
                 console.print(f"[error]❌ Failed to check {email_addr}: {str(e)}[/error]")
-                await asyncio.sleep(30)
+                await asyncio.sleep(120)
         
         if found_emails:
             output_dir = 'found_emails'
